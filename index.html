@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ivanna Stasyshyn | Cennik / Прайс-лист</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Modern luxury font with full Latin (Polish) & Cyrillic (Ukrainian) support: Manrope -->
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Manrope"', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#faf7f5',
+                            100: '#f5efe9',
+                            200: '#e6d7cb',
+                            500: '#b89076',
+                            600: '#9e735a',
+                            800: '#523a2d',
+                            900: '#2c1e17',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        .glass-card {
+            background: rgba(255, 255, 255, 0.92);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+        .lang-content {
+            display: none;
+        }
+        .lang-content.active {
+            display: block;
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-stone-50 via-amber-50/30 to-stone-100 min-h-screen font-sans text-stone-800 pb-16 antialiased">
+
+    <header class="max-w-xl mx-auto px-4 pt-8 pb-4 text-center">
+        <div class="flex justify-center gap-2 mb-6">
+            <button id="btn-pl" onclick="switchLanguage('pl')" class="px-4 py-1.5 rounded-full text-xs font-bold transition-all bg-stone-900 text-white shadow-sm">
+                🇵🇱 Polski
+            </button>
+            <button id="btn-ua" onclick="switchLanguage('ua')" class="px-4 py-1.5 rounded-full text-xs font-bold transition-all bg-white text-stone-600 border border-stone-200">
+                🇺🇦 Українська
+            </button>
+        </div>
+
+        <div class="inline-block p-1 rounded-full bg-gradient-to-tr from-brand-500 to-amber-200 mb-3 shadow-sm">
+            <div class="w-20 h-20 rounded-full bg-white flex items-center justify-center text-brand-600 text-2xl font-light tracking-widest shadow-inner">
+                IS
+            </div>
+        </div>
+        
+        <h1 class="text-2xl font-bold tracking-tight text-stone-900">Ivanna Stasyshyn</h1>
+        <p class="text-xs uppercase tracking-widest text-brand-600 font-semibold mt-1">Brwi & Rzęsy • Studio</p>
+
+        <a href="https://maps.google.com/?q=Wiosny+Ludów+5/lokal+3,+80-859+Gdańsk" target="_blank" class="inline-flex items-center gap-1.5 text-xs text-stone-500 bg-white/80 border border-stone-200/80 px-3 py-1.5 rounded-full mt-3 hover:bg-white transition-colors">
+            <i class="fa-solid fa-location-dot text-brand-500"></i>
+            <span>Wiosny Ludów 5/lokal 3, Gdańsk</span>
+        </a>
+
+        <div class="mt-6 flex flex-wrap justify-center gap-2">
+            <a href="https://wa.me/48729671631" target="_blank" class="flex-1 min-w-[120px] max-w-[160px] flex items-center justify-center gap-2 bg-stone-900 hover:bg-brand-800 text-white py-2.5 px-4 rounded-xl text-sm font-medium transition-all shadow-sm active:scale-95">
+                <i class="fa-brands fa-whatsapp text-base text-emerald-400"></i>
+                <span>WhatsApp</span>
+            </a>
+            <a href="sms:+48729671631" class="flex-1 min-w-[120px] max-w-[160px] flex items-center justify-center gap-2 bg-stone-900 hover:bg-brand-800 text-white py-2.5 px-4 rounded-xl text-sm font-medium transition-all shadow-sm active:scale-95">
+                <i class="fa-solid fa-comment-sms text-sm text-brand-200"></i>
+                <span>SMS</span>
+            </a>
+            <a href="tel:+48729671631" class="w-full sm:w-auto flex items-center justify-center gap-2 bg-brand-600 hover:bg-brand-500 text-white py-2.5 px-5 rounded-xl text-sm font-medium transition-all shadow-sm active:scale-95">
+                <i class="fa-solid fa-phone text-xs"></i>
+                <span>+48 729 671 631</span>
+            </a>
+        </div>
+
+        <a href="https://instagram.com/ivanna.stasyshyn" target="_blank" class="inline-flex items-center gap-2 text-stone-600 hover:text-pink-600 text-sm mt-4 transition-colors">
+            <i class="fa-brands fa-instagram text-lg text-pink-500"></i>
+            <span class="font-medium">@ivanna.stasyshyn</span>
+        </a>
+    </header>
+
+    <main class="max-w-xl mx-auto px-4 space-y-6">
+
+        <div id="content-pl" class="lang-content active space-y-6">
+
+            <!-- Brwi PL -->
+            <section class="glass-card rounded-2xl p-5 border border-stone-200/60 shadow-sm">
+                <div class="flex items-center gap-2 border-b border-stone-200/80 pb-3 mb-4">
+                    <div class="w-2.5 h-2.5 rounded-full bg-brand-500"></div>
+                    <h2 class="text-lg font-bold text-stone-900 tracking-wide uppercase text-xs">Brwi</h2>
+                </div>
+                <div class="divide-y divide-stone-100">
+                    <div class="py-3 flex justify-between items-start gap-3">
+                        <div class="space-y-0.5">
+                            <p class="font-medium text-stone-900 text-sm">Regulacja brwi</p>
+                            <span class="text-xs text-stone-400 flex items-center gap-1"><i class="fa-regular fa-clock"></i> 30 min</span>
+                        </div>
+                        <span class="font-bold text-stone-900 text-base whitespace-nowrap">40 PLN</span>
+                    </div>
+                    <div class="py-3 flex justify-between items-start gap-3">
+                        <div class="space-y-0.5">
+                            <p class="font-medium text-stone-900 text-sm">Regulacja strukturalna brwi</p>
+                            <p class="text-xs text-stone-500">(rozjaśnianie fizyczne bez chemii)</p>
+                            <span class="text-xs text-stone-400 flex items-center gap-1"><i class="fa-regular fa-clock"></i> 20 min</span>
+                        </div>
+                        <span class="font-bold text-stone-900 text-base whitespace-nowrap">30 PLN</span>
+                    </div>
+                    <div class="py-3 flex justify-between items-start gap-3">
+                        <div class="space-y-0.5">
+                            <p class="font-medium text-stone-900 text-sm">Farbowanie brwi</p>
+                            <span class="text-xs text-stone-400 flex items-center gap-1"><i class="fa-regular fa-clock"></i> 30 min</span>
+                        </div>
+                        <span class="font-bold text-stone-900 text-base whitespace-nowrap">50 PLN</span>
+                    </div>
+                    <div class="py-3 flex justify-between items-start gap-3">
+                        <div class="space-y-0.5">
+                            <div class="flex items-center gap-1.5 flex-wrap">
+                                <p class="font-medium text-stone-900 text-sm">Architektura, farbowanie i regulacja brwi</p>
+                                <span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-[10px] font-bold bg-amber-100 text-amber-900 border border-amber-200/80">
+                                    <i class="fa-solid fa-star text-[9px] text-amber-500"></i> Popularne
+                                </span>
+                            </div>
+                            <span class="text-xs text-stone-400 flex items-center gap-1"><i class="fa-regular fa-clock"></i> 40 min</span>
+                        </div>
+                        <span class="font-bold text-stone-900 text-base whitespace-nowrap">90 PLN</span>
+                    </div>
+                    <div class="py-3 flex justify-between items-start gap-3">
+                        <div class="space-y-0.5">
+                            <p class="font-medium text-stone-900 text-sm">Laminacja brwi bez farbowania i regulacji</p>
+                            <span class="text-xs text-stone-400 flex items-center gap-1"><i class="fa-regular fa-clock"></i> 30 min</span>
+                        </div>
+                        <span class="font-bold text-stone-900 text-base whitespace-nowrap">120 PLN</span>
+                    </div>
+                    <div class="py-3 flex justify-between items-start gap-3">
+                        <div class="space-y-0.5">
+                            <p class="font-medium text-stone-900 text-sm">Laminacja brwi z regulacją <span class="text-xs font-normal text-stone-500">(bez farbowania)</span></p>
+                            <span class="text-xs text-stone-400 flex items-center gap-1"><i class="fa-regular fa-clock"></i> 40 min</span>
+                        </div>
+                        <span class="font-bold text-stone-900 text-base whitespace-nowrap">130 PLN</span>
+                    </div>
+                    <div class="py-3 flex justify-between items-start gap-3">
+                        <div class="space-y-0.5">
+                            <p class="font-medium text-stone-900 text-sm">Laminacja brwi z farbowaniem <span class="text-xs font-normal text-stone-500">(bez regulacji)</span></p>
+                            <span class="text-xs text-stone-400 flex items-center gap-1"><i class="fa-regular fa-clock"></i> 40 min</span>
+                        </div>
+                        <span class="font-bold text-stone-900 text-base whitespace-nowrap">140 PLN</span>
+                    </div>
+                    <div class="py-3 flex justify-between items-start gap-3">
+                        <div class="space-y-0.5">
+                            <div class="flex items-center gap-1.5 flex-wrap">
+                                <p class="font-medium text-stone-900 text-sm">Laminacja brwi z farbowaniem i regulacją</p>
+                                <span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-[10px] font-bold bg-amber-100 text-amber-900 border border-amber-200/80">
+                                    <i class="fa-solid fa-star text-[9px] text-amber-500"></i> Popularne
+                                </span>
+                            </div>
+                            <p class="text-xs text-brand-600 font-medium">(pełna laminacja)</p>
+                            <span class="text-xs text-stone-400 flex items-center gap-1"><i class="fa-regular fa-clock"></i> 45 min</span>
+                        </div>
+                        <span class="font-bold text-stone-900 text-base whitespace-nowrap">160 PLN</span>
+                    </div>
+                    <div class="py-3 flex justify-between items-start gap-3">
+                        <div class="space-y-0.5">
+                            <p class="font-medium text-stone-900 text-sm">Rozjaśnianie brwi</p>
+                            <span class="text-xs text-stone-400 flex items-center gap-1"><i class="fa-regular fa-clock"></i> 50 min</span>
+                        </div>
+                        <span class="font-bold text-stone-900 text-base whitespace-nowrap">150 PLN</span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="glass-card rounded-2xl p-5 border border-stone-200/60 shadow-sm">
+                <div class="flex items-center gap-2 border-b border-stone-200/80 pb-3 mb-4">
+                    <div class="w-2.5 h-2.5 rounded-full bg-brand-500"></div>
+                    <h2 class="text-lg font-bold text-stone-900 tracking-wide uppercase text-xs">Rzęsy</h2>
+                </div>
+                <div class="divide-y divide-stone-100">
+                    <div class="py-3 flex justify-between items-start gap-3">
+                        <div class="space-y-0.5">
+                            <p class="font-medium text-stone-900 text-sm">Farbowanie rzęs dolnych</p>
+                            <span class="text-xs text-stone-400 flex items-center gap-1"><i class="fa-regular fa-clock"></i> 15 min</span>
+                        </div>
+                        <span class="font-bold text-stone-900 text-base whitespace-nowrap">15 PLN</span>
+                    </div>
+                    <div class="py-3 flex justify-between items-start gap-3">
+                        <div class="space-y-0.5">
+                            <p class="font-medium text-stone-900 text-sm">Farbowanie rzęs górnych</p>
+                            <span class="text-xs text-stone-400 flex items-center gap-1"><i class="fa-regular fa-clock"></i> 15 min</span>
+                        </div>
+                        <span class="font-bold text-stone-900 text-base whitespace-nowrap">30 PLN</span>
+                    </div>
+                    <div class="py-3 flex justify-between items-start gap-3">
+                        <div class="space-y-0.5">
+                            <p class="font-medium text-stone-900 text-sm">Farbowanie rzęs górnych i dolnych</p>
+                            <p class="text-xs text-stone-500">(komplet)</p>
+                            <span class="text-xs text-stone-400 flex items-center gap-1"><i class="fa-regular fa-clock"></i> 15 min</span>
+                        </div>
+                        <span class="font-bold text-stone-900 text-base whitespace-nowrap">40 PLN</span>
+                    </div>
+                    <div class="py-3 flex justify-between items-start gap-3">
+                        <div class="space-y-0.5">
+                            <div class="flex items-center gap-1.5 flex-wrap">
+                                <p class="font-medium text-stone-900 text-sm">Laminacja rzęs górnych</p>
+                                <span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-[10px] font-bold bg-amber-100 text-amber-900 border border-amber-200/80">
+                                    <i class="fa-solid fa-star text-[9px] text-amber-500"></i> Popularne
+                                </span>
+                            </div>
+                            <span class="text-xs text-stone-400 flex items-center gap-1"><i class="fa-regular fa-clock"></i> 50 min</span>
+                        </div>
+                        <span class="font-bold text-stone-900 text-base whitespace-nowrap">160 PLN</span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="glass-card rounded-2xl p-5 border border-amber-200/60 bg-amber-50/20 shadow-sm">
+                <div class="flex items-center gap-2 border-b border-amber-200/80 pb-3 mb-4">
+                    <i class="fa-solid fa-gem text-amber-600 text-xs"></i>
+                    <h2 class="text-lg font-bold text-stone-900 tracking-wide uppercase text-xs">Pakiety</h2>
+                </div>
+                <div class="divide-y divide-stone-100">
+                    <div class="py-3 flex justify-between items-start gap-3">
+                        <div class="space-y-0.5">
+                            <p class="font-medium text-stone-900 text-sm">Laminacja rzęs + farbowanie i regulacja brwi</p>
+                            <span class="text-xs text-stone-400 flex items-center gap-1"><i class="fa-regular fa-clock"></i> 1 godz. 20 min</span>
+                        </div>
+                        <span class="font-bold text-brand-600 text-base whitespace-nowrap">230 PLN</span>
+                    </div>
+                    <div class="py-3 flex justify-between items-start gap-3">
+                        <div class="space-y-0.5">
+                            <div class="flex items-center gap-1.5 flex-wrap">
+                                <p class="font-medium text-stone-900 text-sm">Laminacja brwi i rzęs</p>
+                                <span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-[10px] font-bold bg-amber-100 text-amber-900 border border-amber-200/80">
+                                    <i class="fa-solid fa-star text-[9px] text-amber-500"></i> Popularne
+                                </span>
+                            </div>
+                            <p class="text-xs text-amber-700 font-medium">(pełny pakiet duo)</p>
+                            <span class="text-xs text-stone-400 flex items-center gap-1"><i class="fa-regular fa-clock"></i> 1 godz. 30 min</span>
+                        </div>
+                        <span class="font-bold text-brand-600 text-base whitespace-nowrap">270 PLN</span>
+                    </div>
+                    <div class="py-3 flex justify-between items-start gap-3">
+                        <div class="space-y-0.5">
+                            <p class="font-medium text-stone-900 text-sm">Regulacja brwi + depilacja nosa i wąsika</p>
+                            <span class="text-xs text-stone-400 flex items-center gap-1"><i class="fa-regular fa-clock"></i> 45 min</span>
+                        </div>
+                        <span class="font-bold text-brand-600 text-base whitespace-nowrap">70 PLN</span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="glass-card rounded-2xl p-5 border border-stone-200/60 shadow-sm">
+                <div class="flex items-center gap-2 border-b border-stone-200/80 pb-3 mb-4">
+                    <div class="w-2.5 h-2.5 rounded-full bg-stone-700"></div>
+                    <h2 class="text-lg font-bold text-stone-900 tracking-wide uppercase text-xs">Usługi męskie</h2>
+                </div>
+                <div class="divide-y divide-stone-100">
+                    <div class="py-3 flex justify-between items-start gap-3">
+                        <div class="space-y-0.5">
+                            <p class="font-medium text-stone-900 text-sm">Męskie farbowanie brwi</p>
+                            <span class="text-xs text-stone-400 flex items-center gap-1"><i class="fa-regular fa-clock"></i> 30 min</span>
+                        </div>
+                        <span class="font-bold text-stone-900 text-base whitespace-nowrap">50 PLN</span>
+                    </div>
+                    <div class="py-3 flex justify-between items-start gap-3">
+                        <div class="space-y-0.5">
+                            <div class="flex items-center gap-1.5 flex-wrap">
+                                <p class="font-medium text-stone-900 text-sm">Męska regulacja brwi</p>
+                                <span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-[10px] font-bold bg-amber-100 text-amber-900 border border-amber-200/80">
+                                    <i class="fa-solid fa-star text-[9px] text-amber-500"></i> Popularne
+                                </span>
+                            </div>
+                            <span class="text-xs text-stone-400 flex items-center gap-1"><i class="fa-regular fa-clock"></i> 45 min</span>
+                        </div>
+                        <span class="font-bold text-stone-900 text-base whitespace-nowrap">70 PLN</span>
+                    </div>
+                    <div class="py-3 flex justify-between items-start gap-3">
+                        <div class="space-y-0.5">
+                            <p class="font-medium text-stone-900 text-sm">Męskie farbowanie + regulacja brwi</p>
+                            <span class="text-xs text-stone-400 flex items-center gap-1"><i class="fa-regular fa-clock"></i> 45 min</span>
+                        </div>
+                        <span class="font-bold text-stone-900 text-base whitespace-nowrap">110 PLN</span>
+                    </div>
+                    <div class="py-3 flex justify-between items-start gap-3">
+                        <div class="space-y-0.5">
+                            <p class="font-medium text-stone-900 text-sm">Męska depilacja nosa lub uszu</p>
+                            <span class="text-xs text-stone-400 flex items-center gap-1"><i class="fa-regular fa-clock"></i> 20 min</span>
+                        </div>
+                        <span class="font-bold text-stone-900 text-base whitespace-nowrap">30 PLN</span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="glass-card rounded-2xl p-5 border border-stone-200/60 shadow-sm">
+                <div class="flex items-center gap-2 border-b border-stone-200/80 pb-3 mb-4">
+                    <div class="w-2.5 h-2.5 rounded-full bg-brand-500"></div>
+                    <h2 class="text-lg font-bold text-stone-900 tracking-wide uppercase text-xs">Depilacja</h2>
+                </div>
+                <div class="divide-y divide-stone-100">
+                    <div class="py-3 flex justify-between items-start gap-3">
+                        <div class="space-y-0.5">
+                            <p class="font-medium text-stone-900 text-sm">Depilacja nosa</p>
+                            <span class="text-xs text-stone-400 flex items-center gap-1"><i class="fa-regular fa-clock"></i> 10 min</span>
+                        </div>
+                        <span class="font-bold text-stone-900 text-base whitespace-nowrap">30 PLN</span>
+                    </div>
+                    <div class="py-3 flex justify-between items-start gap-3">
+                        <div class="space-y-0.5">
+                            <p class="font-medium text-stone-900 text-sm">Depilacja wąsika</p>
+                            <span class="text-xs text-stone-400 flex items-center gap-1"><i class="fa-regular fa-clock"></i> 15 min</span>
+                        </div>
+                        <span class="font-bold text-stone-900 text-base whitespace-nowrap">30 PLN</span>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+
+        <div id="content-ua" class="lang-content space-y-6">
+
+            <!-- Брови UA -->
+            <section class="glass-card rounded-2xl p-5 border border-stone-200/60 shadow-sm">
+                <div class="flex items-center gap-2 border-b border-stone-200/80 pb-3 mb-4">
+                    <div class="w-2.5 h-2.5 rounded-full bg-brand-500"></div>
+                    <h2 class="text-lg font-bold text-stone-900 tracking-wide uppercase text-xs">Брови</h2>
+                </div>
+                <div class="divide-y divide-stone-100">
+                    <div class="py-3 flex justify-between items-start gap-3">
+                        <div class="space-y-0.5">
+                            <p class="font-medium text-stone-900 text-sm">Корекція брів</p>
+                            <span class="text-xs text-stone-400 flex items-center gap-1"><i class="fa-regular fa-clock"></i> 30 хв</span>
+                        </div>
+                        <span class="font-bold text-stone-900 text-base whitespace-nowrap">40 PLN</span>
+                    </div>
+                    <div class="py-3 flex justify-between items-start gap-3">
+                        <div class="space-y-0.5">
+                            <p class="font-medium text-stone-900 text-sm">Структурна корекція брів</p>
+                            <p class="text-xs text-stone-500">(фізичне освітлення без хімії)</p>
+                            <span class="text-xs text-stone-400 flex items-center gap-1"><i class="fa-regular fa-clock"></i> 20 хв</span>
+                        </div>
+                        <span class="font-bold text-stone-900 text-base whitespace-nowrap">30 PLN</span>
+                    </div>
+                    <div class="py-3 flex justify-between items-start gap-3">
+                        <div class="space-y-0.5">
+                            <p class="font-medium text-stone-900 text-sm">Фарбування брів</p>
+                            <span class="text-xs text-stone-400 flex items-center gap-1"><i class="fa-regular fa-clock"></i> 30 хв</span>
+                        </div>
+                        <span class="font-bold text-stone-900 text-base whitespace-nowrap">50 PLN</span>
+                    </div>
+                    <div class="py-3 flex justify-between items-start gap-3">
+                        <div class="space-y-0.5">
+                            <div class="flex items-center gap-1.5 flex-wrap">
+                                <p class="font-medium text-stone-900 text-sm">Архітектура, фарбування та корекція брів</p>
+                                <span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-[10px] font-bold bg-amber-100 text-amber-900 border border-amber-200/80">
+                                    <i class="fa-solid fa-star text-[9px] text-amber-500"></i> Популярне
+                                </span>
+                            </div>
+                            <span class="text-xs text-stone-400 flex items-center gap-1"><i class="fa-regular fa-clock"></i> 40 хв</span>
+                        </div>
+                        <span class="font-bold text-stone-900 text-base whitespace-nowrap">90 PLN</span>
+                    </div>
+                    <div class="py-3 flex justify-between items-start gap-3">
+                        <div class="space-y-0.5">
+                            <p class="font-medium text-stone-900 text-sm">Ламінування брів без фарбування та корекції</p>
+                            <span class="text-xs text-stone-400 flex items-center gap-1"><i class="fa-regular fa-clock"></i> 30 хв</span>
+                        </div>
+                        <span class="font-bold text-stone-900 text-base whitespace-nowrap">120 PLN</span>
+                    </div>
+                    <div class="py-3 flex justify-between items-start gap-3">
+                        <div class="space-y-0.5">
+                            <p class="font-medium text-stone-900 text-sm">Ламінування брів з корекцією <span class="text-xs font-normal text-stone-500">(без фарбування)</span></p>
+                            <span class="text-xs text-stone-400 flex items-center gap-1"><i class="fa-regular fa-clock"></i> 40 хв</span>
+                        </div>
+                        <span class="font-bold text-stone-900 text-base whitespace-nowrap">130 PLN</span>
+                    </div>
+                    <div class="py-3 flex justify-between items-start gap-3">
+                        <div class="space-y-0.5">
+                            <p class="font-medium text-stone-900 text-sm">Ламінування брів з фарбуванням <span class="text-xs font-normal text-stone-500">(без корекції)</span></p>
+                            <span class="text-xs text-stone-400 flex items-center gap-1"><i class="fa-regular fa-clock"></i> 40 хв</span>
+                        </div>
+                        <span class="font-bold text-stone-900 text-base whitespace-nowrap">140 PLN</span>
+                    </div>
+                    <div class="py-3 flex justify-between items-start gap-3">
+                        <div class="space-y-0.5">
+                            <div class="flex items-center gap-1.5 flex-wrap">
+                                <p class="font-medium text-stone-900 text-sm">Ламінування брів з фарбуванням та корекцією</p>
+                                <span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-[10px] font-bold bg-amber-100 text-amber-900 border border-amber-200/80">
+                                    <i class="fa-solid fa-star text-[9px] text-amber-500"></i> Популярне
+                                </span>
+                            </div>
+                            <p class="text-xs text-brand-600 font-medium">(повне ламінування)</p>
+                            <span class="text-xs text-stone-400 flex items-center gap-1"><i class="fa-regular fa-clock"></i> 45 хв</span>
+                        </div>
+                        <span class="font-bold text-stone-900 text-base whitespace-nowrap">160 PLN</span>
+                    </div>
+                    <div class="py-3 flex justify-between items-start gap-3">
+                        <div class="space-y-0.5">
+                            <p class="font-medium text-stone-900 text-sm">Освітлення брів</p>
+                            <span class="text-xs text-stone-400 flex items-center gap-1"><i class="fa-regular fa-clock"></i> 50 хв</span>
+                        </div>
+                        <span class="font-bold text-stone-900 text-base whitespace-nowrap">150 PLN</span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="glass-card rounded-2xl p-5 border border-stone-200/60 shadow-sm">
+                <div class="flex items-center gap-2 border-b border-stone-200/80 pb-3 mb-4">
+                    <div class="w-2.5 h-2.5 rounded-full bg-brand-500"></div>
+                    <h2 class="text-lg font-bold text-stone-900 tracking-wide uppercase text-xs">Вії</h2>
+                </div>
+                <div class="divide-y divide-stone-100">
+                    <div class="py-3 flex justify-between items-start gap-3">
+                        <div class="space-y-0.5">
+                            <p class="font-medium text-stone-900 text-sm">Фарбування нижніх вій</p>
+                            <span class="text-xs text-stone-400 flex items-center gap-1"><i class="fa-regular fa-clock"></i> 15 хв</span>
+                        </div>
+                        <span class="font-bold text-stone-900 text-base whitespace-nowrap">15 PLN</span>
+                    </div>
+                    <div class="py-3 flex justify-between items-start gap-3">
+                        <div class="space-y-0.5">
+                            <p class="font-medium text-stone-900 text-sm">Фарбування верхніх вій</p>
+                            <span class="text-xs text-stone-400 flex items-center gap-1"><i class="fa-regular fa-clock"></i> 15 хв</span>
+                        </div>
+                        <span class="font-bold text-stone-900 text-base whitespace-nowrap">30 PLN</span>
+                    </div>
+                    <div class="py-3 flex justify-between items-start gap-3">
+                        <div class="space-y-0.5">
+                            <p class="font-medium text-stone-900 text-sm">Фарбування верхніх та нижніх вій</p>
+                            <p class="text-xs text-stone-500">(комплект)</p>
+                            <span class="text-xs text-stone-400 flex items-center gap-1"><i class="fa-regular fa-clock"></i> 15 хв</span>
+                        </div>
+                        <span class="font-bold text-stone-900 text-base whitespace-nowrap">40 PLN</span>
+                    </div>
+                    <div class="py-3 flex justify-between items-start gap-3">
+                        <div class="space-y-0.5">
+                            <div class="flex items-center gap-1.5 flex-wrap">
+                                <p class="font-medium text-stone-900 text-sm">Ламінування верхніх вій</p>
+                                <span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-[10px] font-bold bg-amber-100 text-amber-900 border border-amber-200/80">
+                                    <i class="fa-solid fa-star text-[9px] text-amber-500"></i> Популярне
+                                </span>
+                            </div>
+                            <span class="text-xs text-stone-400 flex items-center gap-1"><i class="fa-regular fa-clock"></i> 50 хв</span>
+                        </div>
+                        <span class="font-bold text-stone-900 text-base whitespace-nowrap">160 PLN</span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="glass-card rounded-2xl p-5 border border-amber-200/60 bg-amber-50/20 shadow-sm">
+                <div class="flex items-center gap-2 border-b border-amber-200/80 pb-3 mb-4">
+                    <i class="fa-solid fa-gem text-amber-600 text-xs"></i>
+                    <h2 class="text-lg font-bold text-stone-900 tracking-wide uppercase text-xs">Пакети</h2>
+                </div>
+                <div class="divide-y divide-stone-100">
+                    <div class="py-3 flex justify-between items-start gap-3">
+                        <div class="space-y-0.5">
+                            <p class="font-medium text-stone-900 text-sm">Ламінування вій + фарбування та корекція брів</p>
+                            <span class="text-xs text-stone-400 flex items-center gap-1"><i class="fa-regular fa-clock"></i> 1 год. 20 хв</span>
+                        </div>
+                        <span class="font-bold text-brand-600 text-base whitespace-nowrap">230 PLN</span>
+                    </div>
+                    <div class="py-3 flex justify-between items-start gap-3">
+                        <div class="space-y-0.5">
+                            <div class="flex items-center gap-1.5 flex-wrap">
+                                <p class="font-medium text-stone-900 text-sm">Ламінування брів та вій</p>
+                                <span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-[10px] font-bold bg-amber-100 text-amber-900 border border-amber-200/80">
+                                    <i class="fa-solid fa-star text-[9px] text-amber-500"></i> Популярне
+                                </span>
+                            </div>
+                            <p class="text-xs text-amber-700 font-medium">(повний дуо-пакет)</p>
+                            <span class="text-xs text-stone-400 flex items-center gap-1"><i class="fa-regular fa-clock"></i> 1 год. 30 хв</span>
+                        </div>
+                        <span class="font-bold text-brand-600 text-base whitespace-nowrap">270 PLN</span>
+                    </div>
+                    <div class="py-3 flex justify-between items-start gap-3">
+                        <div class="space-y-0.5">
+                            <p class="font-medium text-stone-900 text-sm">Корекція брів + депіляція носа та вусик</p>
+                            <span class="text-xs text-stone-400 flex items-center gap-1"><i class="fa-regular fa-clock"></i> 45 хв</span>
+                        </div>
+                        <span class="font-bold text-brand-600 text-base whitespace-nowrap">70 PLN</span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="glass-card rounded-2xl p-5 border border-stone-200/60 shadow-sm">
+                <div class="flex items-center gap-2 border-b border-stone-200/80 pb-3 mb-4">
+                    <div class="w-2.5 h-2.5 rounded-full bg-stone-700"></div>
+                    <h2 class="text-lg font-bold text-stone-900 tracking-wide uppercase text-xs">Чоловічі послуги</h2>
+                </div>
+                <div class="divide-y divide-stone-100">
+                    <div class="py-3 flex justify-between items-start gap-3">
+                        <div class="space-y-0.5">
+                            <p class="font-medium text-stone-900 text-sm">Чоловіче фарбування брів</p>
+                            <span class="text-xs text-stone-400 flex items-center gap-1"><i class="fa-regular fa-clock"></i> 30 хв</span>
+                        </div>
+                        <span class="font-bold text-stone-900 text-base whitespace-nowrap">50 PLN</span>
+                    </div>
+                    <div class="py-3 flex justify-between items-start gap-3">
+                        <div class="space-y-0.5">
+                            <div class="flex items-center gap-1.5 flex-wrap">
+                                <p class="font-medium text-stone-900 text-sm">Чоловіча корекція брів</p>
+                                <span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-[10px] font-bold bg-amber-100 text-amber-900 border border-amber-200/80">
+                                    <i class="fa-solid fa-star text-[9px] text-amber-500"></i> Популярне
+                                </span>
+                            </div>
+                            <span class="text-xs text-stone-400 flex items-center gap-1"><i class="fa-regular fa-clock"></i> 45 хв</span>
+                        </div>
+                        <span class="font-bold text-stone-900 text-base whitespace-nowrap">70 PLN</span>
+                    </div>
+                    <div class="py-3 flex justify-between items-start gap-3">
+                        <div class="space-y-0.5">
+                            <p class="font-medium text-stone-900 text-sm">Чоловіче фарбування + корекція брів</p>
+                            <span class="text-xs text-stone-400 flex items-center gap-1"><i class="fa-regular fa-clock"></i> 45 хв</span>
+                        </div>
+                        <span class="font-bold text-stone-900 text-base whitespace-nowrap">110 PLN</span>
+                    </div>
+                    <div class="py-3 flex justify-between items-start gap-3">
+                        <div class="space-y-0.5">
+                            <p class="font-medium text-stone-900 text-sm">Чоловіча депіляція носа або вух</p>
+                            <span class="text-xs text-stone-400 flex items-center gap-1"><i class="fa-regular fa-clock"></i> 20 хв</span>
+                        </div>
+                        <span class="font-bold text-stone-900 text-base whitespace-nowrap">30 PLN</span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="glass-card rounded-2xl p-5 border border-stone-200/60 shadow-sm">
+                <div class="flex items-center gap-2 border-b border-stone-200/80 pb-3 mb-4">
+                    <div class="w-2.5 h-2.5 rounded-full bg-brand-500"></div>
+                    <h2 class="text-lg font-bold text-stone-900 tracking-wide uppercase text-xs">Депіляція</h2>
+                </div>
+                <div class="divide-y divide-stone-100">
+                    <div class="py-3 flex justify-between items-start gap-3">
+                        <div class="space-y-0.5">
+                            <p class="font-medium text-stone-900 text-sm">Депіляція носа</p>
+                            <span class="text-xs text-stone-400 flex items-center gap-1"><i class="fa-regular fa-clock"></i> 10 хв</span>
+                        </div>
+                        <span class="font-bold text-stone-900 text-base whitespace-nowrap">30 PLN</span>
+                    </div>
+                    <div class="py-3 flex justify-between items-start gap-3">
+                        <div class="space-y-0.5">
+                            <p class="font-medium text-stone-900 text-sm">Депіляція вусик</p>
+                            <span class="text-xs text-stone-400 flex items-center gap-1"><i class="fa-regular fa-clock"></i> 15 хв</span>
+                        </div>
+                        <span class="font-bold text-stone-900 text-base whitespace-nowrap">30 PLN</span>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+
+    </main>
+
+    <footer class="max-w-xl mx-auto px-4 mt-10 text-center space-y-2">
+        <p class="text-xs font-medium text-stone-500">Gdańsk, Wiosny Ludów 5/lokal 3</p>
+        <p class="text-xs text-stone-400">© Ivanna Stasyshyn. Wszelkie prawa zastrzeżone.</p>
+    </footer>
+
+    <script>
+        function switchLanguage(lang) {
+            const btnPl = document.getElementById('btn-pl');
+            const btnUa = document.getElementById('btn-ua');
+            const contentPl = document.getElementById('content-pl');
+            const contentUa = document.getElementById('content-ua');
+
+            if (lang === 'pl') {
+                btnPl.className = 'px-4 py-1.5 rounded-full text-xs font-bold transition-all bg-stone-900 text-white shadow-sm';
+                btnUa.className = 'px-4 py-1.5 rounded-full text-xs font-bold transition-all bg-white text-stone-600 border border-stone-200';
+                contentPl.classList.add('active');
+                contentUa.classList.remove('active');
+            } else {
+                btnUa.className = 'px-4 py-1.5 rounded-full text-xs font-bold transition-all bg-stone-900 text-white shadow-sm';
+                btnPl.className = 'px-4 py-1.5 rounded-full text-xs font-bold transition-all bg-white text-stone-600 border border-stone-200';
+                contentUa.classList.add('active');
+                contentPl.classList.remove('active');
+               }
+        }
+    </script>
+    </body>
+      </html>
